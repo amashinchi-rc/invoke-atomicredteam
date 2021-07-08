@@ -1,11 +1,27 @@
-Invoke-AtomicRedTeam is a PowerShell module to execute tests as defined in the [atomics folder](https://github.com/redcanaryco/atomic-red-team/tree/master/atomics) of Red Canary's Atomic Red Team project. The "atomics folder" contains a folder for each Technique defined by the [MITRE ATT&CK™ Framework](https://attack.mitre.org/matrices/enterprise/). Inside of each of these "T#" folders you'll find a **yaml** file that defines the attack procedures for each atomic test as well as an easier to read markdown (**md**) version of the same data.
+# Invoke-Atomic
 
-* Executing atomic tests may leave your system in an undesirable state. You are responsible for understanding what a test does before executing.
+Invoke-Atomic is a PowerShell-based framework for executing the tests defined by
+[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team). The framework
+makes it easy to run tests at scale across Windows, macOS, and Linux
+environments.
 
-* Ensure you have permission to test before you begin.
+## Get started
 
-* It is recommended to set up a test machine for atomic test execution that is similar to the build in your environment. Be sure you have your collection/EDR solution in place, and that the endpoint is checking in and active.
+To install Invoke-Atomic, see the [Install Invoke-Atomic](https://github.com/redcanaryco/invoke-atomicredteam/wiki/Install-Invoke-Atomic)
+page of the wiki.
 
-See the Wiki for complete [Installation and Usage instructions](https://github.com/redcanaryco/invoke-atomicredteam/wiki).
+Once you've installed the framework and its prerequisites, check out [Import the module](https://github.com/redcanaryco/invoke-atomicredteam/wiki/Import-the-module) to start testing.
 
-Note: This execution frameworks works on Windows, MacOS and Linux. If using on MacOS or Linux you must install PowerShell Core first.
+## Learn more
+
+The Invoke-Atomic documentation is available as a [wiki](https://github.com/redcanaryco/invoke-atomicredteam/wiki/).
+
+For information about the philosophy and development of the atomic family of
+projects, visit our website at <https://atomicredteam.io>.
+
+Join our [Slack workspace](https://slack.atomicredteam.io) and get involved with
+the community. Don't forget to review the [code of conduct](CODE_OF_CONDUCT.md)
+before you join.
+
+Check the [license](LICENSE.txt) for information regarding the distribution and
+modification of Invoke-Atomic.
